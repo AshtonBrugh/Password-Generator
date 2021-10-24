@@ -1,4 +1,11 @@
 // Assignment code here
+//assigning arrays
+
+
+var randomUserUpperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+var randomUserLowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+var randomUserNumberTrue = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+var randomUserSpecialCharacters = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+","-", ".", "/", ":", ";", "<", "=", ">", "?", "@","^", "`", "{", "|", "}", "~"];
 
 //How long would you like your password to be? (min 8 - max 128)
 
@@ -45,14 +52,29 @@ function specialCharacters () {
 
 //generate password
 
-function generatePassword (passwordLength, upperCase, lowerCase, numberTrue, specialCharacters) {
+function generatePasswordLog (passwordLength, upperCase, lowerCase, numberTrue, specialCharacters, generatePassword) {
   console.log(passwordLength);
   console.log(upperCase);
   console.log(lowerCase);
   console.log(numberTrue);
   console.log(specialCharacters);
-  
+  console.log(generatePassword); 
+
 }
+
+const randomUserUpperCaseValue = Math.floor(Math.random() * randomUserUpperCase.length);
+//console.log(randomUserUpperCaseValue, randomUserUpperCase[random]);
+
+function generatePassword () {
+  if (upperCase == true & lowerCase == true & numberTrue == true & specialCharacters == true){
+    var gPassword = randomUserUpperCaseValue }
+
+  else var gPassword = null
+  
+  
+};
+
+
 
 // for passwordLength.length 
 // 
@@ -75,7 +97,7 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword(passwordLength(), upperCase(), lowerCase(), numberTrue(), specialCharacters());
+  var password = generatePassword (passwordLength(), upperCase(), lowerCase(), numberTrue(), specialCharacters());
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
