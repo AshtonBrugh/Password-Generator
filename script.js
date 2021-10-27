@@ -35,7 +35,10 @@ function generatePassword() {
   var charactersChoice = confirm('Would you like to use special characters? Click OK for yes and Cancel for no')
     if (charactersChoice) {
     passwordCharacters +=(randomUserSpecialCharacters);
-  }
+  } else {
+    alert("You need to pick at least one option!")
+    return "";
+  };
 
   console.log(passwordCharacters)
 
@@ -64,7 +67,6 @@ function writePassword(password) {
 
   // Add event listener to generate button
   generateBtn.addEventListener("click", writePassword);
-
 
 
 
