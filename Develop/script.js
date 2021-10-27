@@ -6,7 +6,7 @@ var randomUserSpecialCharacters = ["!", "#", "$", "%", "&", "'", "(", ")", "*", 
 
 
 
-//generate password
+//Generate Password
 function generatePassword() {
   var passwordCharacters = [];
   // validating password length is between 8-128 before moving on
@@ -15,24 +15,26 @@ function generatePassword() {
         alert("Password must be between 8 - 128 characters!");
         return "";
       }
+
+  //confirming user wants uppercase letters
   var upperChoice  = confirm('Would you like upper case? Click OK for yes and Cancel for no')
       if (upperChoice) {
-        passwordCharacters = passwordCharacters.concat(randomUserUpperCase)
+        passwordCharacters +=(randomUserUpperCase)
       }
-      
+  //confirming user wants lowercase letters
   var lowerChoice = confirm('Would you like lower case? Click OK for yes and Cancel for no')
      if (lowerChoice) {
-     passwordCharacters = passwordCharacters.concat(randomUserLowerCase)
+     passwordCharacters +=(randomUserLowerCase)
    }
-      
+  //confirming user wants numbers
   var numberChoice = confirm('Would you like to include numbers? Click OK for yes and Cancel for no')
     if (numberChoice) {
-    passwordCharacters = passwordCharacters.concat(randomUserNumberTrue)
+    passwordCharacters +=(randomUserNumberTrue)
   }
-     
+  //confirming user wants special characters 
   var charactersChoice = confirm('Would you like to use special characters? Click OK for yes and Cancel for no')
     if (charactersChoice) {
-    passwordCharacters = passwordCharacters.concat(randomUserSpecialCharacters);
+    passwordCharacters +=(randomUserSpecialCharacters);
   }
 
   console.log(passwordCharacters)
