@@ -10,4 +10,11 @@ This goal was achieved by following these steps: </br>
     • Created a for loop to pass through the "true" arguments using the mathfloor and mathrandom functions to multiply times the password length to provide the generated password. </br>
 
  ## Sceenshot
+ 
+ 
 
+![Readme](https://user-images.githubusercontent.com/91156023/139166043-c5a8fa3a-17b5-4db4-a3a6-acdb2bd2f706.jpg)
+
+## URL
+
+https://ashtonbrugh.github.io/Password-Generator/
